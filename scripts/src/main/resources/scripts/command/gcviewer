@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+# autocompletion list
+if [ "${1}" = "shortlist" ]
+then
+  if [ -z "${2}" ]
+  then
+    echo "setup version start help"
+  fi
+  exit
+fi
+
+# shellcheck source=scripts/functions
+source "$(dirname "${0}")"/../functions
+GCVIEWER_HOME="${DEVON_IDE_HOME}/software/gcviewer"
+TOOL_VERSION_COMMAND="-"
+# shellcheck source=scripts/commandlet-cli
+source "$(dirname "${0}")"/../commandlet-cli
+# gcviewer installation
+function doSetup() {
+  doDevonCommand java setup silent
+  doInstall "gcviewer" "${GCVIEWER_VERSION}" "${1}" "" "${GCVIEWER_HOME}" "" "noUnpack"
+  if [ "${?}" = 0 ]
+  then
+    doCreateGCViewerScript
+  fi
+}
+
+function doStart() {
+  doSetup silent
+  doEcho "Starting GCViewer..."
+  "${GCVIEWER_HOME}/gcviewer"
+}
+
+doCreateGCViewerScript() {
+  echo -e "#!/usr/bin/env bash\ncd \${0%/*}\njava -jar gcviewer*.jar&" > "${GCVIEWER_HOME}/gcviewer"
+  chmod a+x "${GCVIEWER_HOME}/gcviewer"
+}
+
+# CLI
+case ${1} in 
+"help" | "-h")
+  echo "Setup or run gcviewer"
+  echo
+  echo "Arguments:"
+  echo " setup                          install the latest version GCViewer on your machine."
+  echo " start                          launch GCViewer App."
+;;
+"setup" | "s")
+  doSetup "${2}"
+;;
+"start" | "")
+  doStart
+;;
+*)
+  doError "Unkown command!"
+;;
+esac

@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+# autocompletion list
+if [ "${1}" = "shortlist" ]
+then
+  if [ -z "${2}" ]
+  then
+    echo "setup version help"
+  fi
+  exit
+fi
+
+# shellcheck source=scripts/functions
+source "$(dirname "${0}")"/../functions
+GRAALVM_HOME="${DEVON_IDE_HOME}/software/extra/graalvm"
+TOOL_VERSION_COMMAND="'${GRAALVM_HOME}/bin/java' -version"
+# shellcheck source=scripts/commandlet-cli
+source "$(dirname "${0}")"/../commandlet-cli
+
+# $1: optional setup
+function doSetup() {
+  #doDevonCommand java setup silent
+  doInstall "graalvm" "${GRAALVM_VERSION}" "${1}" "" "${GRAALVM_HOME}"
+  if [ "${?}" = 0 ]
+  then
+    graalvm_export="export GRAALVM_HOME=${GRAALVM_HOME}"
+    if ! grep -q "${graalvm_export}" "${DEVON_IDE_HOME}/conf/devon.properties"
+    then
+      echo -e "\n${graalvm_export}" >> "${DEVON_IDE_HOME}/conf/devon.properties"
+    fi
+  fi
+}
+
+# Call GraalVM with specified arguments
+function doRun() {
+  doSetup silent
+  local binary="${GRAALVM_HOME}/bin/${1}"
+  shift
+  if [ ! -x "${binary}" ]
+  then
+    if [ -f "${binary}.exe" ]
+    then
+      binary=${binary}".exe"
+    fi
+    if [ -f "${binary}.cmd" ]
+    then
+      binary=${binary}".cmd"
+    fi
+  fi
+
+  doRunCommand "${binary} ${*}"
+}
+
+# CLI
+case ${1} in 
+"help" | "-h")
+  echo "Setup GraalVM."
+  echo
+  echo "Arguments:"
+  echo " setup                          setup GraalVM (install and verify)"
+  echo " «args»                         call GraalVM with the specified arguments"
+;;
+"setup" | "s" | "")
+  doSetup "${2}"
+;;
+*)
+  doRun "${@}"
+;;
+esac

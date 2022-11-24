@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+# autocompletion list
+if [ "${1}" = "shortlist" ]
+then
+  if [ -z "${2}" ]
+  then
+    echo "setup version help"
+  fi
+  exit
+fi
+
+# shellcheck source=scripts/functions
+source "$(dirname "${0}")"/../functions
+TERRAFORM_HOME="${DEVON_IDE_HOME}/software/terraform"
+TOOL_VERSION_COMMAND="terraform version"
+# shellcheck source=scripts/commandlet-cli
+source "$(dirname "${0}")"/../commandlet-cli
+
+# Call Terraform with specified arguments.
+function doRun() {
+  doSetup silent
+  doRunCommand "${TERRAFORM_HOME}/terraform ${*}"
+}
+
+function doSetup() {
+  doInstall "terraform" "${TERRAFORM_VERSION}"
+  if [ "${?}" = 0 ]
+  then
+    if ! grep terraform ~/.bashrc >/dev/null
+    then
+      terraform -install-autocomplete
+    fi
+  fi
+}
+
+# CLI
+case ${1} in 
+"help" | "-h")
+  echo "Install terraform."
+  echo
+  echo "Arguments:"
+  echo " setup                          install terraform on your machine."
+  echo " «args»                         call terraform with the specified arguments. Call terraform --help for details or use terraform directly as preferred."
+;;
+"setup" | "s" | "")
+  doEcho "Installating Terraform..."
+  doSetup
+;;
+*)
+  doRun "${@}"
+;;
+esac

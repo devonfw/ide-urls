@@ -1,0 +1,15 @@
+= devonfw-ide
+
+include::devonfw-ide-introduction.asciidoc[leveloffset=1]
+
+<<<<
+
+include::devonfw-ide-usage.asciidoc[leveloffset=1]
+
+<<<<
+
+include::devonfw-ide-advanced.asciidoc[leveloffset=1]
+
+<<<<
+
+include::devonfw-ide-support.asciidoc[leveloffset=1]

@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+# autocompletion list
+if [ "${1}" = "shortlist" ]
+then
+  if [ -z "${2}" ]
+  then
+    echo "setup version help"
+  fi
+  exit
+fi
+
+# shellcheck source=scripts/functions
+source "$(dirname "${0}")"/../functions
+TOOL_VERSION_COMMAND="gh --version"
+# shellcheck source=scripts/commandlet-cli
+source "$(dirname "${0}")"/../commandlet-cli
+
+GH_HOME="${DEVON_IDE_HOME}/software/gh"
+
+function doSetup() {
+  doInstall "gh" "${GH_VERSION}" "${1}"
+  return 0
+}
+
+function doRun(){
+  doSetup silent
+  doRunCommand "${GH_HOME}/bin/gh ${*}"
+}
+
+case ${1} in
+"help" | "-h")
+  echo "Install Github CLI."
+  echo
+  echo "Arguments:"
+  echo " setup                          install GitHub CLI on your machine."
+  echo " «args»                         call GitHub CLI with the specified arguments."
+;;
+"setup" | "s")
+  doSetup "${2}"
+;;
+*)
+  doRun "${@}"
+;;
+esac

@@ -1,0 +1,17 @@
+:toc:
+toc::[]
+
+= ionic
+
+The `ionic` commandlet allows to install, configure, and launch https://ionicframework.com/docs/cli[ionic] (ionic-cli). Calling `devon ionic «args»` is more or less the same as calling `ionic «args»` but with some advanced features and ensuring that ionic is properly set up for your project.
+
+The arguments (`devon ionic «args»`) are explained by the following table:
+
+.Usage of `devon ionic`
+[options="header"]
+|=======================
+|*Argument(s)*             |*Meaning*
+|`setup`                   |setup ionic (install and verify), link:configuration.asciidoc[configurable] via `IONIC_VERSION`
+|`create`                  |Create a new https://github.com/devonfw/devon4ng/#devon4ng[devon4ng] ionic project.
+|`«args»`                  |run ionic with the given arguments (`«args»`)
+|=======================

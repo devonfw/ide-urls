@@ -1,0 +1,376 @@
+= Changelog of devonfw-ide
+
+This file documents all notable changes to https://github.com/devonfw/ide[devonfw-ide].
+
+== 2022.08.004
+
+New release with various improvements and bugfixes:
+
+* https://github.com/devonfw/ide/issues/826[#826]: List available versions for a tool
+* https://github.com/devonfw/ide/issues/878[#878]: Use default tool version from `available-versions`
+* https://github.com/devonfw/ide/issues/893[#893]: Ability to configure version prefix 
+* https://github.com/devonfw/ide/issues/908[#908]: AWS CLI integration for MacOS and bugfix for win/linux
+* https://github.com/devonfw/ide/issues/940[#940]: Make doInstall even more generic
+* https://github.com/devonfw/ide/issues/935[#935]: doDevonCommand should use doFail instead of doAskToContinue
+* https://github.com/devonfw/ide/issues/905[#905]: Better error handling when installing Eclipse plugins
+* https://github.com/devonfw/ide/issues/960[#960]: openshift version check fails
+* https://github.com/devonfw/ide/issues/929[#929]: Ensure function documentation is in sync
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/34?closed=1[milestone 2022.08.004].
+
+== 2022.08.003
+
+Urgent bugfix release:
+
+* https://github.com/devonfw/ide/issues/921[#921]: Setup fails on windows: repository '_isNew' does not exist
+* https://github.com/devonfw/ide/issues/923[#923]: setup.bat fails if whitespaces in PSModulePath
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/33?closed=1[milestone 2022.08.003].
+
+== 2022.08.002
+
+New release with various improvements and bugfixes:
+
+* https://github.com/devonfw/ide/issues/905[#905]: Improving eclipse output when installing plugins
+* https://github.com/devonfw/ide/issues/833[#833]: Implementing GitHub CLI
+* https://github.com/devonfw/ide/issues/894[#894]: Integration of Quarkus CLI
+* https://github.com/devonfw/ide/issues/832[#832]: Solution for unstable update sites
+* https://github.com/devonfw/ide/issues/877[#877]: Update version of vscode to 1.71.0
+* https://github.com/devonfw/ide/issues/898[#898]: AWS can not be installed
+* https://github.com/devonfw/ide/pull/882[#882]: Fixing NPE by updating mvn default version to 3.8.4
+* https://github.com/devonfw/ide/issues/409[#409]: Redo PATH adaptation if devon.bat is not in PATH
+* https://github.com/devonfw/ide/issues/866[#866]:  scripts folder not added to PATH if setup.bat called from powershell
+* https://github.com/devonfw/ide/issues/880[#880]: Customize the trigger of the integration tests
+* https://github.com/devonfw/ide/issues/879[#879]: Renaming integration-tests and adding badges
+* https://github.com/devonfw/ide/issues/751[#751]: Documentation of functions
+* https://github.com/devonfw/ide/pull/914[#914]: Tools Documentation Update
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/32?closed=1[milestone 2022.08.002].
+
+== 2022.08.001
+
+New release with various improvements and bugfixes:
+
+* https://github.com/devonfw/ide/issues/840[#840]: Pip Integration and fixing package installation
+* https://github.com/devonfw/ide/issues/713[#713]: Python integration
+* https://github.com/devonfw/ide/issues/706[#706]: Folder ${M2_REPO} gets created
+* https://github.com/devonfw/ide/issues/817[#817]: Update Eclipse to 2022-03 
+* https://github.com/devonfw/ide/pull/796[#796]: update sonarqube to 9.4.0.54424
+* https://github.com/devonfw/ide/issues/794[#794]: Improve installation process of Rancher Desktop and VPNKit
+* https://github.com/devonfw/ide/issues/738[#738]: CLI Lazy Docker integration
+* https://github.com/devonfw/ide/issues/819[#819]: add option to create new devonfw-ide installation
+* https://github.com/devonfw/ide/issues/810[#810]: Add OpenShift CLI
+* https://github.com/devonfw/ide/issues/692[#692]: Improve Windows Terminal with gitbash
+* https://github.com/devonfw/ide/issues/786[#786]: Improve Windows Terminal with powershell
+* https://github.com/devonfw/ide/issues/849[#849]: Integration of GCViewer
+* https://github.com/devonfw/ide/issues/867[#867]: ERROR: Error opening the file. There may be a disk or file system error.
+* https://github.com/devonfw/ide/pull/829[#829]: #701: fix registry import paths for Windows Terminal
+* https://github.com/devonfw/ide/pull/802[#802]: #798: English grammar fix for success message
+* https://github.com/devonfw/ide/issues/803[#803]: git pull not working on debug
+* https://github.com/devonfw/ide/issues/848[#848]: Update PATH automatically on doDevonCommand
+* https://github.com/devonfw/ide/issues/811[#811]: add function for installing with different package managers
+* https://github.com/devonfw/ide/issues/691[#691]: Nightly test of devonfw-ide installation
+* https://github.com/devonfw/ide/issues/800[#800]: Nightly test with additional tests
+* https://github.com/devonfw/ide/issues/767[#767]: Fix AsciiDoc issues
+* https://github.com/devonfw/ide/issues/774[#774]: Create Getting-Started-For-Developers Documentation
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/31?closed=1[milestone 2022.08.001].
+
+== 2022.04.003
+
+New release with various improvements and bugfixes:
+
+* https://github.com/devonfw/ide/issues/781[#781]: Support for DotNet
+* https://github.com/devonfw/ide/issues/770[#770]: RancherDesktop can not be installed
+* https://github.com/devonfw/ide/issues/777[#777]: Support for colored output
+* https://github.com/devonfw/ide/issues/749[#749]: Prompt default value for Settings URL
+* https://github.com/devonfw/ide/pull/785[#785]: fix passing args to terraform and helm on proxy usage
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/30?closed=1[milestone 2022.04.003].
+
+== 2022.04.002
+
+New release with improved cloud tool support and various improvements and bugfixes:
+
+* https://github.com/devonfw/ide/issues/711[#711]: AWS CLI integration
+* https://github.com/devonfw/ide/issues/712[#712]: Azure CLI integration
+* https://github.com/devonfw/ide/issues/713[#713]: Python integration
+* https://github.com/devonfw/ide/issues/632[#632]: fork detection buggy
+* https://github.com/devonfw/ide/issues/687[#687]: error on git pull
+* https://github.com/devonfw/ide/issues/770[#770]: first small fixes for VPNKit
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/29?closed=1[milestone 2022.04.002].
+
+== 2022.04.001
+
+New release with improved cloud tool support and various improvements and bugfixes:
+
+* https://github.com/devonfw/ide/issues/690[#690]: Support for RancherDesktop
+* https://github.com/devonfw/ide/issues/710[#710]: Add VPN enhancement to RancherDesktop
+* https://github.com/devonfw/ide/issues/695[#695]: Docker setup not working
+* https://github.com/devonfw/ide/issues/636[#636]: Helm integration
+* https://github.com/devonfw/ide/issues/637[#637]: Terraform integration
+* https://github.com/devonfw/ide/issues/638[#638]: GraalVM integration
+* https://github.com/devonfw/ide/issues/734[#734]: unzip: command not found (zip support)
+* https://github.com/devonfw/ide/issues/701[#701]: Support for windows terminal
+* https://github.com/devonfw/ide/pull/700[#700]: support for MAVEN_ARGS variable for mvn 3.x
+* https://github.com/devonfw/ide/issues/696[#696]: Move CobiGen home folder from user home to ide per default
+* https://github.com/devonfw/ide/issues/683[#683]: Generalize MacOS app workaround
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/27?closed=1[milestone 2022.04.001].
+
+== 2021.12.005
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/693[#693]: Docker isQuiet: command not found
+* https://github.com/devonfw/ide/pull/668[#668]: Bugfix for issue #667 - devon npm setup ignores a given version
+* https://github.com/devonfw/ide/pull/686[#686]: Improve UX for "devon ide update" on windows
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/26?closed=1[milestone 2021.12.005].
+
+== 2021.12.004
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/678[#678]: Support extra Java for IDEs via EXTRA_JAVA_VERSION
+* https://github.com/devonfw/ide/issues/680[#680]: Intellij Plugin installation broken
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/25?closed=1[milestone 2021.12.004].
+
+== 2021.12.003
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/664[#664] / https://github.com/devonfw/ide/issues/662[662]: scripts/command/eclipse: line 79: isQuiet: command not found
+* https://github.com/devonfw/ide/issues/665[#665]: devon ide update should update all installed tools
+* https://github.com/devonfw/ide/issues/669[#669]: Installation of custom tools broken
+* https://github.com/devonfw/ide/issues/667[#667]: devon npm setup ignores a given version
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/23?closed=1[milestone 2021.12.003].
+
+== 2021.12.002
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/641[#641]: Improve tools download to be stable
+* https://github.com/devonfw/ide/issues/650[#650]: Update java version to 11.0.13_8
+* https://github.com/devonfw/ide/issues/649[#649]: Update eclipse version to 2021‑12
+* https://github.com/devonfw/ide/issues/538[#538]: Make Eclipse version dependent on JAVA_VERSION
+* https://github.com/devonfw/ide/issues/658[#658]: Update intellij to 2021.3
+* https://github.com/devonfw/ide/issues/618[#618]: IDE does not support JDK 17
+* https://github.com/devonfw/ide/issues/604[#604]: Installation error with eclipse plugins
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/22?closed=1[milestone 2021.12.002].
+
+== 2021.12.001
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/616[#616]: Default eclipse version not downloadable
+* https://github.com/devonfw/ide/pull/607[#607]: fix url from eclipse plugins
+* https://github.com/devonfw/ide/issues/453[#453]: Automatic plugin installation for IntelliJ
+* https://github.com/devonfw/ide/issues/601[#601]: Update of node.js to 14.17.6 to fix CVE-2021-22930
+* https://github.com/devonfw/ide/pull/625[#625]: There is no doIsQuiet yet for CobiGen
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/21?closed=1[milestone 2021.12.001].
+
+== 2021.04.002
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/340[#340]: Improve CobiGen CLI with update support
+* https://github.com/devonfw/ide/issues/584[#584]: add commandlets for docker and kubernetes (experimental)
+* https://github.com/devonfw/ide/issues/591[#591]: Update node.js and related components to fix CVEs
+* https://github.com/devonfw/ide/issues/585[#585]: Settings repos with branches
+* https://github.com/devonfw/ide/issues/581[#581]: Redundant update sites not updated
+* https://github.com/devonfw/ide/pull/589[#589]: Update advanced-tooling-windows.asciidoc
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/20?closed=1[milestone 2021.04.002].
+
+== 2021.04.001
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/537[#537]: Update eclipse to 2021-03
+* https://github.com/devonfw/ide/issues/287[#287]: Command autocompletion
+* https://github.com/devonfw/ide/issues/536[#536]: Improve handling of aborted downloads
+* https://github.com/devonfw/ide/issues/542[#542]: Support placeholders in settings.xml template
+* https://github.com/devonfw/ide/issues/557[#557]: minimize setup by reducing DEVON_IDE_TOOLS
+* https://github.com/devonfw/ide/issues/537[#537]: Update eclipse to 2021-03
+* https://github.com/devonfw/ide/issues/550[#550]: update maven to 3.8.1
+* https://github.com/devonfw/ide/issues/545[#545]: update devon4j to 2021.04.002 and add migration
+* https://github.com/devonfw/ide/issues/575[#575]: jasypt support for password encryption and decryption
+* https://github.com/devonfw/ide/issues/546[#546]: Problems with tm-terminal Eclipse plugin
+* https://github.com/devonfw/ide/issues/553[#553]: VSCode user-data-dir shall be part of workspace config
+* https://github.com/devonfw/ide/issues/513[#513]: Configurable generation of IDE start scripts
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/18?closed=1[milestone 2021.04.001].
+
+== 2020.12.003
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/pull/535[#535]: improve windows PATH adoption on initial setup
+* https://github.com/devonfw/ide/issues/539[#539]: Improve devon release to support other versioning strategies
+* https://github.com/devonfw/ide/pull/534[#534]: Update VS Code to 1.54.1 and node.js to v14.16.0
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/19?closed=1[milestone 2020.12.003].
+
+== 2020.12.002
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/522[#522]: update devon4j to 2020.12.002 and create migration to this version
+* https://github.com/devonfw/ide/pull/524[#524]: workaround for bug in git for windows 
+* https://github.com/devonfw/ide/issues/520[#520]: update default version of java to 11.0.9.1_1
+* https://github.com/devonfw/ide/issues/514[#514]: Remove or adjust AnyEditTools plugin update site
+* https://github.com/devonfw/ide/issues/480[#480]: Eclipse import to wrong workspace
+* https://github.com/devonfw/ide/issues/505[#505]: devon java create - ERROR: Missing arguments for doMavenArchetype
+* https://github.com/devonfw/ide/issues/507[#507]: allow to switch eclipse edition via variable
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/17?closed=1[milestone 2020.12.002].
+
+== 2020.12.001
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/pull/495[#495]: Documentation corrections
+* https://github.com/devonfw/ide/issues/491[#491]: Consider lombok support
+* https://github.com/devonfw/ide/pull/489[#489]: Update node to v12.19.0 and VS Code to 1.50.1
+* https://github.com/devonfw/ide/issues/470[#470]: reverse merge of workspace settings not sorting properties anymore
+* https://github.com/devonfw/ide/issues/483[#483]: Error during installation when npm is already installed
+* https://github.com/devonfw/ide/issues/493[#493]: custom evironment variables from devon.properties not available in IDE
+* https://github.com/devonfw/ide/pull/499[#499]: Enable configuration of version for yarn and angular cli (ng)
+* https://github.com/devonfw/ide/issues/415[#415]: documentation to customize settings
+* https://github.com/devonfw/ide/issues/479[#479]: Error for vscode plugin installation
+* https://github.com/devonfw/ide/issues/502[#502]: Filecomment for new Java types is still @author ${user}
+* https://github.com/devonfw/ide/issues/471[#471]: Preconfigure Project Explorer with Hierarchical Project Presentation
+* https://github.com/devonfw/ide/issues/498[#498]: migration support for devon4j 2020.12.001
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/16?closed=1[milestone 2020.12.001].
+
+== 2020.08.002
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/452[#452]: Consider support for IntelliJ Ultimate
+* https://github.com/devonfw/ide/pull/474[#474]: make intellij work on linux (idea.sh vs. idea)
+* https://github.com/devonfw/ide/pull/475[#475]: IntelliJ edition support not working properly
+* https://github.com/devonfw/ide/pull/477[#477]: update IntelliJ to 2020.2.1
+* https://github.com/devonfw/ide/pull/478[#478]: add IDEA_HOME to PATH after installation
+* https://github.com/devonfw/ide/pull/465[#465]: Security update for node.js and VS code
+* https://github.com/devonfw/ide/issues/467[#467]: Expansion of ~ stopped working on windows CMD (M2_HOME not properly set)
+* https://github.com/devonfw/ide/issues/461[#461]: settings still not updated: JsonMerger not writing even if target file not exists
+* https://github.com/devonfw/ide/pull/455[#455]: Fix args quoting for node commandlet
+* https://github.com/devonfw/ide/pull/464[#464]: Update advanced-tooling-windows.asciidoc
+* https://github.com/devonfw/ide/issues/458[#458]: Outdated readme.txt
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/15?closed=1[milestone 2020.08.002].
+
+== 2020.08.001
+
+Update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/pull/454[#454]: update to eclipse 2020.06
+* https://github.com/devonfw/ide/pull/442[#442]: update nodejs and vscode
+* https://github.com/devonfw/ide/issues/432[#432]: vsCode settings are not updated
+* https://github.com/devonfw/ide/issues/446[#446]: intellij: doConfigureEclipse: command not found
+* https://github.com/devonfw/ide/issues/440[#440]: Software update may lead to inconsistent state due to windows file locks
+* https://github.com/devonfw/ide/issues/427[#427]: release: keep leading zeros
+* https://github.com/devonfw/ide/issues/450[#450]: update settings
+* https://github.com/devonfw/ide/issues/431[#431]: devon build command not working correct for yarn or npm
+* https://github.com/devonfw/ide/issues/449[#449]: update to devon4j 2020.08.001
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/12?closed=1[milestone 2020.08.001].
+
+== 2020.04.004
+
+Minor update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/433[#433]: Windows: devon command line sets wrong environment variables (with tilde symbol)
+* https://github.com/devonfw/ide/pull/435[#435]: fix variable resolution on bash
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/14?closed=1[milestone 2020.04.004].
+
+== 2020.04.003
+
+Minor update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/395[#395]: variable from devon.properites unset if value is in double quotes
+* https://github.com/devonfw/ide/pull/429[#429]: Added script to create a meta file in the users directory after setup
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/13?closed=1[milestone 2020.04.003].
+
+== 2020.04.002
+
+Minor update with the following bugfixes and improvements:
+
+* https://github.com/devonfw/ide/issues/418[#418]: Make projects optional
+* https://github.com/devonfw/ide/pull/421[#421]: update devon4j to 2020.04.002
+* https://github.com/devonfw/ide/issues/413[#413]: Update Eclipse to 2020-03
+* https://github.com/devonfw/ide/issues/424[#424]: Strange errors on windows if devon.properties contains mixed line endings
+* https://github.com/devonfw/ide/issues/399[#399]: launching of Intellij fails with No such file or directory error.
+* https://github.com/devonfw/ide/pull/410[#410]: fix jsonmerge for boolean and null values
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/11?closed=1[milestone 2020.04.002].
+
+== 2020.04.001
+
+Starting with this release we have changed the versioning schema in `devonfw` to `yyyy.mm.NNN` where `yyyy.mm` is the date of the planned milestone release and `NNN` is a running number increased with every bug- or security-fix update.
+
+* https://github.com/devonfw/ide/issues/394[#394] variable from devon.properties not set if not terminated with newline
+* https://github.com/devonfw/ide/issues/399[#399] launching of Intellij fails with No such file or directory error.
+* https://github.com/devonfw/ide/issues/371[#371] Eclipse plugin installation broke
+* https://github.com/devonfw/ide/issues/390[#390] maven get/set-version buggy
+* https://github.com/devonfw/ide/issues/397[#397] migration support for devon4j 2020.04.001
+* https://github.com/devonfw/ide/pull/400[#400] allow custom args for release
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/9?closed=1[milestone 2020.04.001].
+
+== 3.3.1
+
+New release with bugfixes and new ide plugin feature:
+
+* https://github.com/devonfw/ide/issues/343[#343]: Setup can't find Bash nor Git
+* https://github.com/devonfw/ide/issues/369[#369]: Fix flattening of POMs
+* https://github.com/devonfw/ide/pull/386[#386]: Feature/clone recursive
+* https://github.com/devonfw/ide/issues/379[#379]: Use own extensions folder in devonfw-ide
+* https://github.com/devonfw/ide/pull/381[#381]: Add ability to configure VS Code plugins via settings
+* https://github.com/devonfw/ide/issues/376[#376]: Improve Eclipse plugin configuration
+* https://github.com/devonfw/ide/pull/373[#373]: Fix project import on windows
+* https://github.com/devonfw/ide/pull/374[#374]: Rework build on import
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/10?closed=1[milestone 3.3.1].
+
+== 3.3.0
+
+New release with bugfixes and new project import feature:
+
+* https://github.com/devonfw/ide/pull/343[#343]: Detect non-admin GitForWindows and Cygwin
+* https://github.com/devonfw/ide/issues/175[#175]: Ability to clone projects and import into Eclipse automatically
+* https://github.com/devonfw/ide/issues/346[#346]: devon eclipse add-plugin parameters swapped
+* https://github.com/devonfw/ide/issues/363[#363]: devon ide update does not pull latest project settings
+* https://github.com/devonfw/ide/pull/366[#366]: update java versions to latest fix releases
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/5?closed=1[milestone 3.3.0].
+
+== 3.2.4
+
+Bugfix release with new features such as CobiGen CLI:
+
+* https://github.com/devonfw/ide/issues/335[#335]: Update to recent LTS versions of node.js and VSCode
+* https://github.com/devonfw/ide/issues/339[#339]: Properties not updated after settings cloned or changed
+* https://github.com/devonfw/ide/issues/59[#59]: Integrate CobiGen CLI as commandlet
+* https://github.com/devonfw/ide/issues/21[#21]: Improve OS Support
+* https://github.com/devonfw/ide/pull/313[#313]: Improve keyboard layout for MacOS
+* https://github.com/devonfw/ide/issues/259[#259]: mvn package runs into test failures on Windows
+
+The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/2?closed=1[milestone 3.2.4].
+
+== 3.2.3
+
+This version marks the first fully official release.
+Changes for this release can be found in https://github.com/devonfw/ide/milestone/8?closed=1[milestone 3.2.3].
+Prior versions can be found in according milestones and release tags on github.
+However, the history before this release is considered legacy and is therefore not reflected here.
