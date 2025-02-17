@@ -2,7 +2,7 @@
   "(,4.3)": [
     {
       "tool": "java",
-      "versionRange": "[8,8]"
+      "versionRange": "[8,9)"
     }
   ],
   "[4.3,4.7)": [
