@@ -92,7 +92,7 @@
   "[8.10,)": [
     {
       "tool": "java",
-      "versionRange": "[8,23]"
+      "versionRange": "[8,24)"
     }
   ]
 }
