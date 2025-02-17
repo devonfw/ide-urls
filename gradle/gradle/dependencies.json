@@ -2,97 +2,97 @@
   "(,4.3)": [
     {
       "tool": "java",
-      "versionRange": "[8,)"
+      "versionRange": "[8,8]"
     }
   ],
   "[4.3,4.7)": [
     {
       "tool": "java",
-      "versionRange": "[9,)"
+      "versionRange": "[8,9]"
     }
   ],
   "[4.7,5.0)": [
     {
       "tool": "java",
-      "versionRange": "[10,)"
+      "versionRange": "[8,10]"
     }
   ],
   "[5.0,5.4)": [
     {
       "tool": "java",
-      "versionRange": "[11,)"
+      "versionRange": "[8,11]"
     }
   ],
   "[5.4,6.0)": [
     {
       "tool": "java",
-      "versionRange": "[12,)"
+      "versionRange": "[8,12]"
     }
   ],
   "[6.0,6.3)": [
     {
       "tool": "java",
-      "versionRange": "[13,)"
+      "versionRange": "[8,13]"
     }
   ],
   "[6.3,6.7)": [
     {
       "tool": "java",
-      "versionRange": "[14,)"
+      "versionRange": "[8,14]"
     }
   ],
   "[6.7,7.0)": [
     {
       "tool": "java",
-      "versionRange": "[15,)"
+      "versionRange": "[8,15]"
     }
   ],
   "[7.0,7.3)": [
     {
       "tool": "java",
-      "versionRange": "[16,)"
+      "versionRange": "[8,16]"
     }
   ],
   "[7.3,7.5)": [
     {
       "tool": "java",
-      "versionRange": "[17,)"
+      "versionRange": "[8,17]"
     }
   ],
   "[7.5,7.6)": [
     {
       "tool": "java",
-      "versionRange": "[18,)"
+      "versionRange": "[8,18]"
     }
   ],
   "[7.6,8.3)": [
     {
       "tool": "java",
-      "versionRange": "[19,)"
+      "versionRange": "[8,19]"
     }
   ],
   "[8.3,8.5)": [
     {
       "tool": "java",
-      "versionRange": "[20,)"
+      "versionRange": "[8,20]"
     }
   ],
   "[8.5,8.8)": [
     {
       "tool": "java",
-      "versionRange": "[21,)"
+      "versionRange": "[8,21]"
     }
   ],
   "[8.8,8.10)": [
     {
       "tool": "java",
-      "versionRange": "[22,)"
+      "versionRange": "[8,22]"
     }
   ],
   "[8.10,)": [
     {
       "tool": "java",
-      "versionRange": "[23,)"
+      "versionRange": "[8,23]"
     }
   ]
 }
