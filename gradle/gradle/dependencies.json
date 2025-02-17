@@ -86,7 +86,7 @@
   "[8.8,8.10)": [
     {
       "tool": "java",
-      "versionRange": "[8,22]"
+      "versionRange": "[8,23)"
     }
   ],
   "[8.10,)": [
