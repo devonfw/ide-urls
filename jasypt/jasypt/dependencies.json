@@ -1,11 +1,5 @@
 {
-  "[1.0,2.*)": [
-    {
-      "tool": "java",
-      "versionRange": "[8,)"
-    }
-  ],
-  "[2.*,)": [
+  "[1.0,)": [
     {
       "tool": "java",
       "versionRange": "[8,)"
