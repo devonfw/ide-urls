@@ -17,13 +17,7 @@
          "versionRange": "[4.0,)"
       }
    ],
-   "[6.0, 7.0)": [
-      {
-         "tool": "node",
-         "versionRange": "[4.0,)"
-      }
-   ],
-   "[7.0, 8.0)": [
+   "[6.1, 7.5)": [
       {
          "tool": "node",
          "versionRange": "[6.0,)"
