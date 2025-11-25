@@ -88,12 +88,32 @@
     "severity" : 6.5,
     "versions" : [ "[v3.0.0,v3.9.4)" ]
   }, {
+    "id" : "CVE-2020-15187",
+    "severity" : 4.7,
+    "versions" : [ "[v3.0.0,v3.3.2)" ]
+  }, {
     "id" : "CVE-2023-25165",
     "severity" : 4.3,
     "versions" : [ "[v3.0.0,v3.11.1)" ]
   }, {
+    "id" : "CVE-2020-15184",
+    "severity" : 2.7,
+    "versions" : [ "[v3.0.0,v3.3.2)" ]
+  }, {
+    "id" : "CVE-2020-15185",
+    "severity" : 2.7,
+    "versions" : [ "[v3.0.0,v3.3.2)" ]
+  }, {
+    "id" : "CVE-2020-15186",
+    "severity" : 2.7,
+    "versions" : [ "[v3.0.0,v3.3.2)" ]
+  }, {
     "id" : "CVE-2020-11013",
     "severity" : 5.0,
     "versions" : [ "[v3.1.0,v3.2.0)" ]
+  }, {
+    "id" : "CVE-2025-53547",
+    "severity" : 8.6,
+    "versions" : [ "[v3.18.0,v3.18.4)" ]
   } ]
 }
