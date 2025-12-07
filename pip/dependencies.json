@@ -1,4 +1,10 @@
 {
+  "[24.0,)": [
+    {
+      "tool": "python",
+      "versionRange": "[3.8,)"
+    }
+  ],
   "[23.0,)": [
     {
       "tool": "python",
