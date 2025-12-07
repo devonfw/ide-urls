@@ -5,7 +5,7 @@
       "versionRange": "[3.8,)"
     }
   ],
-  "[23.0,)": [
+  "[23.0,24.0)": [
     {
       "tool": "python",
       "versionRange": "[3.7,3.13)"
