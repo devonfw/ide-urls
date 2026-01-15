@@ -1,11 +1,18 @@
 {
-  "issues" : [ {
-    "id" : "CVE-2013-0253",
-    "severity" : 5.8,
-    "versions" : [ "[3.0.4,3.0.4]" ]
-  }, {
-    "id" : "CVE-2021-26291",
-    "severity" : 9.1,
-    "versions" : [ "(,3.8.1)" ]
-  } ]
+  "issues": [
+    {
+      "id": "CVE-2013-0253",
+      "severity": 5.8,
+      "versions": [
+        "[3.0.4]"
+      ]
+    },
+    {
+      "id": "CVE-2021-26291",
+      "severity": 9.1,
+      "versions": [
+        "(,3.8.1)"
+      ]
+    }
+  ]
 }
