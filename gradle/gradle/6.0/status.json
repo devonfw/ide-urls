@@ -1,13 +1,13 @@
 {
-  "manual" : false,
-  "urls" : {
-    "1520430928" : {
-      "success" : {
-        "timestamp" : "2024-10-12T03:27:36.062910813Z"
+  "manual": false,
+  "urls": {
+    "1520430928": {
+      "success": {
+        "timestamp": "2024-10-12T03:27:36.062910813Z"
       },
-      "error" : {
-        "timestamp" : "2024-10-11T15:30:23.619754775Z",
-        "code" : 200
+      "error": {
+        "timestamp": "2026-02-11T04:54:50.179015222Z",
+        "code": 502
       }
     }
   }
