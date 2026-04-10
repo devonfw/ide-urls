@@ -20,7 +20,7 @@
   "[9.0,10.0)": [
     {
       "tool": "java",
-      "versionRange": "[8,11)"
+      "versionRange": "[8,)"
     }
   ],
   "[8.5,9.0)": [
