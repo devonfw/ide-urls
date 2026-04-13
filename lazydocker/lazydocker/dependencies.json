@@ -1,1 +1,12 @@
-{}
+{
+  "[0,)": [
+    {
+      "tool": "docker",
+      "versionRange": "[1.25,)"
+    },
+    {
+      "tool": "docker-compose",
+      "versionRange": "[1.23.2,)"
+    }
+  ]
+}
