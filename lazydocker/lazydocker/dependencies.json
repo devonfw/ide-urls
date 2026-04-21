@@ -1,8 +1,0 @@
-{
-  "[0,)": [
-    {
-      "tool": "docker",
-      "versionRange": "[0,)"
-    }
-  ]
-}
