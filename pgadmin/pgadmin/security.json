@@ -1,7 +1,18 @@
 {
-  "issues" : [ {
-    "id" : "CVE-2023-1907",
-    "severity" : 7.5,
-    "versions" : [ "(,7.0)" ]
-  } ]
+  "issues": [
+    {
+      "id": "CVE-2022-0959",
+      "severity": 6.5,
+      "versions": [
+        "(,6.7)"
+      ]
+    },
+    {
+      "id": "CVE-2023-0241",
+      "severity": 6.5,
+      "versions": [
+        "(,6.19)"
+      ]
+    }
+  ]
 }
