@@ -2,7 +2,7 @@
   "[0,)": [
     {
       "tool": "python",
-      "versionRange": "[3.8,3.12)"
+      "versionRange": "[3.8,)"
     }
   ]
 }
