@@ -1,0 +1,8 @@
+{
+  "[0,)": [
+    {
+      "tool": "python",
+      "versionRange": "[3.8,)"
+    }
+  ]
+}
