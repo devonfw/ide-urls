@@ -43,6 +43,13 @@
       ]
     },
     {
+      "id": "CVE-2026-13346",
+      "severity": 6.5,
+      "versions": [
+        "(,26.2)"
+      ]
+    },
+    {
       "id": "CVE-2026-8643",
       "severity": 5.5,
       "versions": [
